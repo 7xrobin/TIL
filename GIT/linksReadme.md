@@ -1,8 +1,8 @@
-##How to add relatives link on a README.me
+## How to add relatives link on a README.me
 
 To add link for a file or directory of the working repository, you can use the markup like:
 
-[Link Name](docs/file.md)
+`[Link Name](docs/file.md)`
 
 Where docs/files.md is the path for the file that you want to link, realative to the current README.me 
 
