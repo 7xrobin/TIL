@@ -5,3 +5,6 @@ The intention is to build an easy and organized repository of information that c
 
 ## GIT
 * [Link repository files into README.md](GIT/linksReadme.md)
+
+## REACT.JS
+* [Forward References](REACT.JS/forwardRefs.md)
