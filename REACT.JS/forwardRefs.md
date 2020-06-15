@@ -1,6 +1,6 @@
 ForwardRef it a react atribute to able to pass a Dom reference from a component for one of its children.
 
-`hm
+`html
 const FancyButton = React.forwardRef((props, ref) => (
   <button ref={ref} className="FancyButton">
     {props.children}
