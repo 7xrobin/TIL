@@ -6,9 +6,16 @@ Is usefull to use in conjunption with useEffect to make asyncronous call, ass a 
 Specialy for fetche the data before mounting the component.
 
 ```html
-const fetchData = useCallback( () => { apiCall(params).then(response => {
-setLocalState(response.data); }); }, [params]); useEffect(() => { fetchData();
-}, [fetchData]);
+    const fetchData = useCallback(() => {
+        apiCall(params).then(response => {
+            setPlacesList(response.data);
+            setLoading(false);
+        });
+    }, [params]);
+
+    useEffect(() => {
+        fetchData();
+    }, [fetchData]);
 ```
 
 This avoid to end in a render loop on the `useEffect` if we call there the `apiCall`,
